@@ -203,7 +203,7 @@ Hasil
 
 ### 3.c 
 dan bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
-* Dari hasil penghitungan poin a dan b 
+* Dari hasil penghitungan poin a, bisa didapatkan visualisasi dalam histogram yang ada pada poin b.
 
 ### 3.d 
 Nilai Rataan (μ) dan Varian ( σ² ) dari Distribusi Poisson.
