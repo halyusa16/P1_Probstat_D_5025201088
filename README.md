@@ -342,14 +342,19 @@ Nilai Rataan (μ) dan Varian ( σ² ) dari Distribusi Exponensial untuk n = 100 
 # untuk n = 100 dan lambda = 3
 
 lambda = 3
+n = 100 
 
-E = 1/lambda
-var = 1/lambda^2
+set.seed(1)
+E = mean(rexp(n, rate = lambda))
+var = (sd(rexp(n, rate = lambda)))^2
+E
+var
 ```
 
 Hasil 
 
-![image](https://user-images.githubusercontent.com/100200062/162612079-cf4abedb-78dd-45b2-ba46-0f41b5044e37.png)
+![image](https://user-images.githubusercontent.com/100200062/162622002-9c188085-08e2-4d25-90dc-9ae241ef9512.png)
+
 
 
 # Soal 6 
