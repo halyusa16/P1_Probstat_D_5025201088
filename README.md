@@ -365,29 +365,73 @@ X1 = Dibawah rata-rata
 X2 = Diatas rata-rata
 
 ```R
-kodekode
+# Soal 6.a fungsi probabilitas dari distribusi normal 
+# P(X1 <= x <= X2), hitung Z-score dan plot data generate random dalam bentuk grafik
+
+n = 100
+mean = 50
+sd = 8 
+
+set.seed(1)
+prob <- rnorm(n, mean, sd)
+
+X1 = runif(1, min = min(prob), max = mean)
+X2 = runif(1, min = mean, max(prob))
+
+probabilitas1 <- pnorm(X1, mean, sd)
+probabilitas2 <- pnorm(X2, mean, sd)
+
+probabilitas <- probabilitas2 - probabilitas1
+
+plot(prob)
 ```
 
 Hasil 
+
+![image](https://user-images.githubusercontent.com/100200062/162621278-bc2cb0b8-e654-4548-85b3-bff41a7ea2ec.png)
+
 
 ### 6.b
 Generate Histogram dari Distribusi Normal dengan breaks 50 dan format penamaan:
 NRP_Nama_Probstat_{Nama Kelas}_DNhistogram
 
 ```R
-kodekode
+# Soal 6.b generate histogram dari distribusi normal 
+# breaks 50
+# menggunakan format nama NRP_Nama_Probstat{Nama Kelas}_DNhistogram 
+
+breaks = 50 
+hist(prob, breaks, main = "5025201088_Halyusa Ard Wahyudi_Probstat_D_DNhistogram",
+     col = "steelblue")
 ```
 
 Hasil 
+
+![image](https://user-images.githubusercontent.com/100200062/162621299-6201bf70-e775-4a99-b6b1-ae1f612450af.png)
+
+
+Diagramnya sebagai berikut: 
+
+![image](https://user-images.githubusercontent.com/100200062/162621313-959b0e19-7502-4ad6-b352-0bd8c0ed1920.png)
+
 
 ### 6.c 
 Nilai Varian ( ) dari hasil generate random nilai σ² Distribusi Normal.
 
 ```R
-kodekode
+# Nomor 6.c varian dari hasil generate random nilai distribusi normal
+# var = prob ^ 2
+
+var = (sd(prob)) ^ 2
 ```
 
 Hasil 
+
+![image](https://user-images.githubusercontent.com/100200062/162621342-541b631a-b48f-4e0d-8730-81d04471c212.png)
+
+## ----------------
+Sekian Repo Praktikum Probstat Modul 1 2022 dari saya, terima kasih. 
+
 
 
 
