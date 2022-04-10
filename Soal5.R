@@ -22,9 +22,13 @@ hist(rexp(n),main = "Exponential Histogram", col = "steelblue", xlab = "X", ylab
 # untuk n = 100 dan lambda = 3
 
 lambda = 3
+n = 100 
 
-E = 1/lambda
-var = 1/lambda^2
+set.seed(1)
+E = mean(rexp(n, rate = lambda))
+var = (sd(rexp(n, rate = lambda)))^2
+E
+var
 
 
 
